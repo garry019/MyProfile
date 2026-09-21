@@ -46,7 +46,7 @@ const habilidades = [
     },
 ];
 
-function Home() {
+export function Home() {
     return (
         <div className="bg-white text-dark">
             {/* Hero */}
@@ -137,5 +137,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home;
