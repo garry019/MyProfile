@@ -29,55 +29,55 @@ const tecnologias = [
     {
         titulo: 'Lenguajes',
         items: [
-            { nombre: 'HTML', icono: SiHtml5 },
-            { nombre: 'PHP', icono: SiPhp },
-            { nombre: 'Python', icono: SiPython },
-            { nombre: 'JavaScript', icono: SiJavascript },
+            { nombre: 'HTML', icono: SiHtml5, color: '#E34F26' },
+            { nombre: 'PHP', icono: SiPhp, color: '#777BB4' },
+            { nombre: 'Python', icono: SiPython, color: '#3776AB' },
+            { nombre: 'JavaScript', icono: SiJavascript, color: '#F7DF1E' },
         ]
     },
     {
         titulo: 'Frameworks',
         items: [
-            { nombre: 'Laravel', icono: SiLaravel },
-            { nombre: 'Angular', icono: SiAngular },
-            { nombre: 'React', icono: SiReact },
-            { nombre: 'Node.js', icono: SiNodedotjs },
-            { nombre: 'Three.js', icono: SiThreedotjs },
-            { nombre: 'Django', icono: SiDjango },
+            { nombre: 'Laravel', icono: SiLaravel, color: '#FF2D20' },
+            { nombre: 'Angular', icono: SiAngular, color: '#DD0031' },
+            { nombre: 'React', icono: SiReact, color: '#61DAFB' },
+            { nombre: 'Node.js', icono: SiNodedotjs, color: '#5FA04E' },
+            { nombre: 'Three.js', icono: SiThreedotjs, color: '#000000' },
+            { nombre: 'Django', icono: SiDjango, color: '#092E20' },
         ],
     },
     {
         titulo: 'Bases de datos',
         items: [
-            { nombre: 'SQL', icono: FiDatabase },
-            { nombre: 'NoSQL', icono: FiDatabase },
+            { nombre: 'SQL', icono: FiDatabase, color: '#4479A1' },
+            { nombre: 'NoSQL', icono: FiDatabase, color: '#47A248' },
         ],
     },
     {
         titulo: 'Control de versiones',
         items: [
-            { nombre: 'Git', icono: SiGit },
-            { nombre: 'GitHub', icono: SiGithub },
+            { nombre: 'Git', icono: SiGit, color: '#F05032' },
+            { nombre: 'GitHub', icono: SiGithub, color: '#181717' },
         ],
     },
     {
         titulo: 'Videojuegos',
         items: [
-            { nombre: 'HTML', icono: SiHtml5 },
-            { nombre: 'Javascript', icono: SiJavascript },
-            { nombre: 'Blender', icono: SiBlender },
-            { nombre: 'Unreal Engine', icono: SiUnrealengine },
-            { nombre: 'Unity', icono: SiUnity },
-            { nombre: 'Realidad Virtual', icono: FiBox },
-            { nombre: 'Realidad Aumentada', icono: FiGlobe },
+            { nombre: 'HTML', icono: SiHtml5, color: '#E34F26' },
+            { nombre: 'Javascript', icono: SiJavascript, color: '#F7DF1E' },
+            { nombre: 'Blender', icono: SiBlender, color: '#E87D0D' },
+            { nombre: 'Unreal Engine', icono: SiUnrealengine, color: '#0E1128' },
+            { nombre: 'Unity', icono: SiUnity, color: '#000000' },
+            { nombre: 'Realidad Virtual', icono: FiBox, color: '#7C4DFF' },
+            { nombre: 'Realidad Aumentada', icono: FiGlobe, color: '#00BFA5' },
         ],
     },
     {
         titulo: 'IA',
         items: [
-            { nombre: 'Integraciones', icono: FiCpu },
-            { nombre: 'Evaluar y Probar', icono: FiCheckCircle },
-            { nombre: 'Desarrollo asistido', icono: FiCode },
+            { nombre: 'Integraciones', icono: FiCpu, color: '#412991' },
+            { nombre: 'Evaluar y Probar', icono: FiCheckCircle, color: '#0E9F6E' },
+            { nombre: 'Desarrollo asistido', icono: FiCode, color: '#D97706' },
         ],
     },
 ];
@@ -102,7 +102,7 @@ export function Tecnologias() {
                                             key={item.nombre}
                                             className="badge bg-light text-dark border fw-normal fs-6 px-3 py-2"
                                         >
-                                            <Icono className="me-2" />
+                                            <Icono className="me-2" style={{ color: item.color }} />
                                             {item.nombre}
                                         </span>
                                     );

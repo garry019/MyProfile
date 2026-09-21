@@ -1,0 +1,27 @@
+.timeline {
+    padding-left: 0.25rem;
+}
+
+.timeline-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.25rem;
+    z-index: 1;
+}
+
+.timeline-line {
+    width: 2px;
+    background: linear-gradient(to bottom, var(--bs-secondary), rgba(var(--bs-secondary-rgb), 0.15));
+}
+
+/* En desktop: icono un poco más grande */
+@media (min-width: 768px) {
+    .timeline-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 1.5rem;
+    }
+    .timeline-item {
+        max-width: 720px;
+    }
+}
