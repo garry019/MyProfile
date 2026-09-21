@@ -64,7 +64,7 @@ export function Home() {
                                 <div className="display-2 fw-bold lh-1">
                                     +{anios}<span className="text-secondary"></span>
                                 </div>
-                                <div className="text-secondary">Años de experiencia en desarrollo</div>
+                                <div className="text-secondary">Años de experiencia</div>
                             </div>
                         </div>
                     </div>
