@@ -78,6 +78,7 @@ const tecnologias = [
             { nombre: 'Integraciones', icono: FiCpu, color: '#412991' },
             { nombre: 'Evaluar y Probar', icono: FiCheckCircle, color: '#0E9F6E' },
             { nombre: 'Desarrollo asistido', icono: FiCode, color: '#D97706' },
+            { nombre: 'SDD(Spec-Driven Development)', icono: FiCode, color: '#D97706' },
         ],
     },
 ];
