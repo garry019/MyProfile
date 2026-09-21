@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const enlaces = [
-    { id: 'inicio', label: 'INICIO' },
+    { id: 'inicio', label: 'GABRIEL CALDERON' },
     { id: 'tecnologias', label: 'TECNOLOGIAS' },
     { id: 'workflow', label: 'WORKFLOW' },
     { id: 'portafolio', label: 'PORTAFOLIO' },
@@ -76,7 +76,7 @@ export function Navbar() {
                         className={`btn btn-sm rounded-pill px-2 px-sm-3 py-2 text-decoration-none ${esActivo ? 'btn-dark' : 'btn-link link-secondary'
                             }`}
                     >
-                        {label}
+                        {id === "inicio" ? <strong className="text-dark">{label}</strong> : label}
                     </a>
                 );
             })}
