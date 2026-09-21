@@ -117,7 +117,7 @@ export function Home() {
                 </div>
             </section>
 
-            {/* Habilidades blandas */}
+            {/* Workflow */}
             <section id="workflow" className="d-flex align-items-center py-5 bg-light border-top border-bottom" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <h2 className="fw-bold">Workflow</h2>
@@ -138,8 +138,19 @@ export function Home() {
                 </div>
             </section>
 
+            {/* Portafolio */}
+            <section id="portafolio" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
+                <div className="container py-lg-4">
+                    <h2 className="fw-bold">Portafolio</h2>
+                    <p className="text-secondary">Diseño y programación de lo que de verdad necesitás.</p>
+                    <div className="row g-4">
+                        
+                    </div>
+                </div>
+            </section>
+
             {/* Contacto */}
-            <section id="contacto" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
+            <section id="contacto" className="d-flex align-items-center bg-light py-5" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <div className="row">
                         <div className="col-lg-8 mb-5">
