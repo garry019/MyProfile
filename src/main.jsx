@@ -1,13 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { Home } from './components/Home'
+import { MainAnimation } from './components/MainAnimation'
 import './style.css'
 
 function App() {
   return (
-    <main>
-      <h1>MyProfile</h1>
-      <p>Proyecto iniciado con React y Vite.</p>
-    </main>
+    <>
+      {/* <MainAnimation /> */}
+      <Home />
+    </>
   )
 }
 
