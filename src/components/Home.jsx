@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Navbar } from './Navbar';
 
 const perfil = {
-    nombre: 'Tu Nombre',
+    nombre: 'Gabriel Calderón',
     cargo: 'Desarrollador Full Stack',
     resumen:
         'Dedicado al desarrollo web, sistemas de información y desarrollo de videojuegos. Poseo un profundo conocimiento de las tecnologías front-end y back-end, y me mantengo actualizado con las últimas tendencias de la industria para ofrecer soluciones de vanguardia.',
-    experiencia: '+12',
+    experiencia: '+20',
 };
 
 const tecnologias = [
@@ -49,8 +50,10 @@ const habilidades = [
 export function Home() {
     return (
         <div className="bg-white text-dark">
+            <Navbar />
+
             {/* Hero */}
-            <header className="border-bottom">
+            <header id="inicio" className="border-bottom" style={{ minHeight: "100vh" }}>
                 <div className="container py-5">
                     <div className="row py-lg-5">
                         <div className="col-lg-8">
@@ -77,7 +80,7 @@ export function Home() {
             </header>
 
             {/* Tecnologías */}
-            <section id="tecnologias" className="py-5">
+            <section id="tecnologias" className="py-5" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <h2 className="fw-bold mb-4">Tecnologías</h2>
                     <div className="row g-4">
@@ -103,7 +106,7 @@ export function Home() {
             </section>
 
             {/* Habilidades blandas */}
-            <section className="py-5 bg-light border-top border-bottom">
+            <section id="habilidades" className="py-5 bg-light border-top border-bottom" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <h2 className="fw-bold mb-4">Forma de trabajar</h2>
                     <div className="row g-4">
@@ -118,7 +121,7 @@ export function Home() {
             </section>
 
             {/* Contacto */}
-            <section id="contacto" className="py-5">
+            <section id="contacto" className="py-5" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <div className="row">
                         <div className="col-lg-8">
@@ -127,7 +130,7 @@ export function Home() {
                                 Si tienes un proyecto web, un sistema de información o un videojuego en mente,
                                 escríbeme.
                             </p>
-                            <a href="mailto:correo@ejemplo.com" className="btn btn-dark px-4">
+                            <a href="mailto:garry019@gmail.com" className="btn btn-dark px-4">
                                 Enviar un correo
                             </a>
                         </div>
