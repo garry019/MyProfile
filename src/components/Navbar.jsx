@@ -4,6 +4,7 @@ const enlaces = [
     { id: 'inicio', label: 'INICIO' },
     { id: 'tecnologias', label: 'TECNOLOGIAS' },
     { id: 'workflow', label: 'WORKFLOW' },
+    { id: 'portafolio', label: 'PORTAFOLIO' },
     { id: 'contacto', label: 'CONTACTO' },
 ];
 
