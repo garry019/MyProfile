@@ -70,7 +70,7 @@ export function Home() {
                         <div className="col-lg-8">
                             <p className="text-secondary fs-5 mb-2">{perfil.cargo}</p>
                             <h1 className="display-3 fw-bold mb-4">{perfil.nombre}</h1>
-                            <p className="lead text-secondary mb-4">Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>. Poseo un profundo conocimiento de las tecnologías <strong>front-end</strong> y <strong>back-end</strong>, y me mantengo actualizado con las últimas tendencias de la industria para ofrecer soluciones de vanguardia.</p>
+                            <p className="lead text-secondary mb-4">Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>. <br /> Apliación de tecnologías <strong>front-end</strong> y <strong>back-end</strong>. <br />Tendencias más recientes de la industria para ofrecer soluciones de vanguardia.</p>
                             <div className="d-flex flex-wrap gap-2">
                                 <a href="#tecnologias" className="btn btn-dark px-4">
                                     Ver tecnologías
@@ -143,11 +143,8 @@ export function Home() {
                 <div className="container py-lg-4">
                     <div className="row">
                         <div className="col-lg-8 mb-5">
-                            <h2 className="fw-bold mb-3">Trabajemos juntos</h2>
-                            <p className="text-secondary mb-4">¿Tenés una idea en mente, vamos a revisarlo juntos.</p>
-                            <a href="mailto:garry019@gmail.com" className="btn btn-dark px-4">
-                                Enviar un correo
-                            </a>
+                            <h2 className="fw-bold mb-3">¿Tenés una idea en mente?</h2>
+                            <a href="mailto:garry019@gmail.com" className="btn btn-dark px-4 fs-1">LET'S BUILD</a>
                         </div>
                         <div className="col-lg-8 mt-5">
                             <h5 className="fw-bold mb-3" style={{lineHeight:0.5}}>Gabriel Calderón</h5>
