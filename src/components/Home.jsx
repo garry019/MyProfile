@@ -52,7 +52,7 @@ export function Home() {
                             <p className="lead text-secondary mb-4">Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>. <br /> Tecnologías <strong>front-end</strong> y <strong>back-end</strong>. <br />Tendencias más recientes de la industria y soluciones de vanguardia.</p>
                             <div className="d-flex flex-wrap gap-2">
                                 <a href="#tecnologias" className="btn btn-dark px-4">
-                                    Ver tecnologías
+                                    Tecnologías
                                 </a>
                                 <a href="#contacto" className="btn btn-outline-dark px-4">
                                     Contacto
