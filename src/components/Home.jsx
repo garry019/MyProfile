@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Navbar } from './Navbar';
+import { Tecnologias } from './Tecnologias';
 import { div } from 'three/tsl';
 
 const perfil = {
@@ -7,33 +8,6 @@ const perfil = {
     cargo: 'Desarrollador Full Stack',
     experiencia: '+20',
 };
-
-const tecnologias = [
-    {
-        titulo: 'Lenguajes',
-        items: ['HTML', 'PHP', 'Python', 'JavaScript'],
-    },
-    {
-        titulo: 'Frameworks',
-        items: ['Laravel', 'Angular', 'React', 'Node.js', 'Three.js', 'Django'],
-    },
-    {
-        titulo: 'Bases de datos',
-        items: ['SQL', 'NoSQL'],
-    },
-    {
-        titulo: 'Control de versiones',
-        items: ['Git', 'GitHub'],
-    },
-    {
-        titulo: 'Videojuegos',
-        items: ['HTML', 'Javascript', 'Blender', 'Unreal Engine', 'Unity', 'Realidad Virtual', 'Realidad Aumentada'],
-    },
-    {
-        titulo: 'IA',
-        items: ['Integraciones', 'Evaluar y Probar', 'Desarrollo asistido'],
-    },
-];
 
 const habilidades = [
     {
@@ -92,29 +66,7 @@ export function Home() {
 
             {/* Tecnologías */}
             <section id="tecnologias" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
-                <div className="container py-lg-4">
-                    <h2 className="fw-bold">Tecnologías</h2>
-                    <p className="text-secondary">Herramientas modernas para construir rápido, seguro y fácil de mantener.</p>
-                    <div className="row g-4">
-                        {tecnologias.map((grupo) => (
-                            <div className="col-md-6" key={grupo.titulo}>
-                                <div className="border rounded-2 p-4 h-100">
-                                    <h3 className="h5 mb-3">{grupo.titulo}</h3>
-                                    <div className="d-flex flex-wrap gap-2">
-                                        {grupo.items.map((item) => (
-                                            <span
-                                                key={item}
-                                                className="badge bg-light text-dark border fw-normal fs-6 px-3 py-2"
-                                            >
-                                                {item}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <Tecnologias />
             </section>
 
             {/* Workflow */}
