@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 
 const enlaces = [
-    { id: 'inicio', label: 'Inicio' },
-    { id: 'tecnologias', label: 'Tecnologías' },
-    { id: 'habilidades', label: 'Habilidades' },
-    { id: 'contacto', label: 'Contacto' },
+    { id: 'inicio', label: 'INICIO' },
+    { id: 'tecnologias', label: 'TECNOLOGIAS' },
+    { id: 'workflow', label: 'WORKFLOW' },
+    { id: 'contacto', label: 'CONTACTO' },
 ];
 
 export function Navbar() {

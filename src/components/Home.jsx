@@ -1,22 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Navbar } from './Navbar';
+import { div } from 'three/tsl';
 
 const perfil = {
     nombre: 'Gabriel Calderón',
     cargo: 'Desarrollador Full Stack',
-    resumen:
-        'Dedicado al desarrollo web, sistemas de información y desarrollo de videojuegos. Poseo un profundo conocimiento de las tecnologías front-end y back-end, y me mantengo actualizado con las últimas tendencias de la industria para ofrecer soluciones de vanguardia.',
     experiencia: '+20',
 };
 
 const tecnologias = [
     {
-        titulo: 'Lenguajes y bases de datos',
-        items: ['PHP', 'JavaScript', 'Python', 'SQL', 'NoSQL'],
+        titulo: 'Lenguajes',
+        items: ['HTML', 'PHP', 'Python', 'JavaScript'],
     },
     {
         titulo: 'Frameworks',
         items: ['Laravel', 'Angular', 'React', 'Node.js', 'Three.js', 'Django'],
+    },
+    {
+        titulo: 'Bases de datos',
+        items: ['SQL', 'NoSQL'],
     },
     {
         titulo: 'Control de versiones',
@@ -24,26 +27,34 @@ const tecnologias = [
     },
     {
         titulo: 'Videojuegos',
-        items: ['Unreal Engine', 'Unity'],
+        items: ['HTML', 'Javascript', 'Blender', 'Unreal Engine', 'Unity', 'Realidad Virtual', 'Realidad Aumentada'],
+    },
+    {
+        titulo: 'IA',
+        items: ['Integraciones', 'Evaluar y Probar', 'Desarrollo asistido'],
     },
 ];
 
 const habilidades = [
     {
-        titulo: 'Trabajo en equipo',
-        texto: 'Comunicación asertiva y colaboración para alcanzar objetivos comunes.',
+        titulo: 'Diseño y Marca',
+        texto: '...',
+        items: ['Identidad Visual & Logotipos', 'UI/UX & Sistemas de Diseño', 'Prototipado Interactivo']
     },
     {
-        titulo: 'Pensamiento crítico',
-        texto: 'Análisis riguroso de cada problema antes de proponer una solución.',
+        titulo: 'Desarrollo Web y Móvil',
+        texto: '...',
+        items: ['Aplicaciones Web & SaaS', 'Interfaces & Mobile First', 'APIs & Bases de Datos']
     },
     {
-        titulo: 'Autogestión',
-        texto: 'Organización y disciplina para cumplir plazos con autonomía.',
+        titulo: 'Automatización e Integracion IA',
+        texto: '...',
+        items: ['Agentes & Asistentes IA', 'Automatización de Procesos', 'Pipelines & APIs de IA']
     },
     {
-        titulo: 'Decisiones responsables',
-        texto: 'Criterio para elegir la mejor alternativa y responder por los resultados.',
+        titulo: 'Despliegue y Mantenimiento',
+        texto: '...',
+        items: ['Mantenimiento & Optimización', 'Hosting, Dominio & Cloud', 'Monitoreo & Soporte Continuo']
     },
 ];
 
@@ -53,13 +64,13 @@ export function Home() {
             <Navbar />
 
             {/* Hero */}
-            <header id="inicio" className="border-bottom" style={{ minHeight: "100vh" }}>
+            <header id="inicio" className="border-bottom d-flex align-items-center bg-light" style={{ minHeight: "100vh" }}>
                 <div className="container py-5">
                     <div className="row py-lg-5">
                         <div className="col-lg-8">
                             <p className="text-secondary fs-5 mb-2">{perfil.cargo}</p>
                             <h1 className="display-3 fw-bold mb-4">{perfil.nombre}</h1>
-                            <p className="lead text-secondary mb-4">{perfil.resumen}</p>
+                            <p className="lead text-secondary mb-4">Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>. Poseo un profundo conocimiento de las tecnologías <strong>front-end</strong> y <strong>back-end</strong>, y me mantengo actualizado con las últimas tendencias de la industria para ofrecer soluciones de vanguardia.</p>
                             <div className="d-flex flex-wrap gap-2">
                                 <a href="#tecnologias" className="btn btn-dark px-4">
                                     Ver tecnologías
@@ -72,7 +83,7 @@ export function Home() {
                         <div className="col-lg-4 d-flex align-items-center mt-5 mt-lg-0">
                             <div className="border-start border-3 border-dark ps-4">
                                 <div className="display-2 fw-bold lh-1">{perfil.experiencia}</div>
-                                <div className="text-secondary">años de experiencia en desarrollo</div>
+                                <div className="text-secondary">Años de experiencia en desarrollo</div>
                             </div>
                         </div>
                     </div>
@@ -80,9 +91,10 @@ export function Home() {
             </header>
 
             {/* Tecnologías */}
-            <section id="tecnologias" className="py-5" style={{ minHeight: "100vh" }}>
+            <section id="tecnologias" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
-                    <h2 className="fw-bold mb-4">Tecnologías</h2>
+                    <h2 className="fw-bold">Tecnologías</h2>
+                    <p className="text-secondary">Herramientas modernas para construir rápido, seguro y fácil de mantener.</p>
                     <div className="row g-4">
                         {tecnologias.map((grupo) => (
                             <div className="col-md-6" key={grupo.titulo}>
@@ -106,14 +118,20 @@ export function Home() {
             </section>
 
             {/* Habilidades blandas */}
-            <section id="habilidades" className="py-5 bg-light border-top border-bottom" style={{ minHeight: "100vh" }}>
+            <section id="workflow" className="d-flex align-items-center py-5 bg-light border-top border-bottom" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
-                    <h2 className="fw-bold mb-4">Forma de trabajar</h2>
+                    <h2 className="fw-bold">Workflow</h2>
+                    <p className="text-secondary mb-4">Digitalización de procesos, ventas online, automatización de tareas.</p>
                     <div className="row g-4">
                         {habilidades.map((h) => (
                             <div className="col-sm-6 col-lg-3" key={h.titulo}>
                                 <h3 className="h6 fw-bold">{h.titulo}</h3>
-                                <p className="text-secondary mb-0">{h.texto}</p>
+                                {/* <p className="text-secondary mb-0">{h.texto}</p> */}
+                                <ul className="list-group">
+                                    {h.items.map((item) => (
+                                        <li key={item} className="list-group-item">{item}</li>
+                                    ))}
+                                </ul>
                             </div>
                         ))}
                     </div>
@@ -121,18 +139,23 @@ export function Home() {
             </section>
 
             {/* Contacto */}
-            <section id="contacto" className="py-5" style={{ minHeight: "100vh" }}>
+            <section id="contacto" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
                 <div className="container py-lg-4">
                     <div className="row">
-                        <div className="col-lg-8">
+                        <div className="col-lg-8 mb-5">
                             <h2 className="fw-bold mb-3">Trabajemos juntos</h2>
-                            <p className="text-secondary mb-4">
-                                Si tienes un proyecto web, un sistema de información o un videojuego en mente,
-                                escríbeme.
-                            </p>
+                            <p className="text-secondary mb-4">¿Tenés una idea en mente, vamos a revisarlo juntos.</p>
                             <a href="mailto:garry019@gmail.com" className="btn btn-dark px-4">
                                 Enviar un correo
                             </a>
+                        </div>
+                        <div className="col-lg-8 mt-5">
+                            <h5 className="fw-bold mb-3" style={{lineHeight:0.5}}>Gabriel Calderón</h5>
+                            <p className="text-secondary" style={{lineHeight:0}}>Full Stack Developer & UX/UI · Bogotá, Colombia.</p>
+                            <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://github.com/garry019">GitHub</a>
+                            <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://www.linkedin.com/in/gary-full-stack-web-developer/">LinkedIn</a>
+                            <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://wa.me/5713026684002">WhatsApp</a>
+                            <a className="btn btn-sm btn-outline-dark me-1" href="mailto:garry019@gmail.com">Enviar un correo</a>
                         </div>
                     </div>
                 </div>
