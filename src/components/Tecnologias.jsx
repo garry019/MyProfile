@@ -68,8 +68,8 @@ const tecnologias = [
             { nombre: 'Blender', icono: SiBlender, color: '#E87D0D' },
             { nombre: 'Unreal Engine', icono: SiUnrealengine, color: '#0E1128' },
             { nombre: 'Unity', icono: SiUnity, color: '#000000' },
-            { nombre: 'Realidad Virtual', icono: FiBox, color: '#7C4DFF' },
-            { nombre: 'Realidad Aumentada', icono: FiGlobe, color: '#00BFA5' },
+            { nombre: 'Realidad Virtual(VR)', icono: FiBox, color: '#7C4DFF' },
+            { nombre: 'Realidad Aumentada(AR)', icono: FiGlobe, color: '#00BFA5' },
         ],
     },
     {
