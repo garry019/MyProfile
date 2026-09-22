@@ -12,7 +12,7 @@ export function Contacto() {
                     <p className="text-secondary mb-4" style={{ lineHeight: 0 }}>Full Stack Developer & UX/UI · Bogotá, Colombia.</p>
                     <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://github.com/garry019">GitHub</a>
                     <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://www.linkedin.com/in/gary-full-stack-web-developer/">LinkedIn</a>
-                    <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://wa.me/5713026684002">WhatsApp</a>
+                    <a className="btn btn-sm btn-outline-dark me-1" target="_blank" href="https://wa.me/573026684002">WhatsApp</a>
                     <a className="btn btn-sm btn-outline-dark me-1" href="mailto:garry019@gmail.com">Enviar un correo</a>
                 </div>
             </div>
