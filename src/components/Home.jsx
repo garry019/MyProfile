@@ -1,6 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import '../assets/css/styles.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/styles.css';
 import { useState, useEffect } from 'react';
+import { SiGithub } from 'react-icons/si';
+import { FaLinkedinIn, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { Navbar } from './Navbar';
 import { Tecnologias } from './Tecnologias';
 import { Workflow } from './Workflow';
@@ -32,6 +34,10 @@ const perfil = {
     nombre: 'Gabriel Calderón',
     cargo: 'Desarrollador Full Stack',
     experiencia: 20,
+    github: 'https://github.com/garry019',
+    linkedin: 'https://www.linkedin.com/in/gary-full-stack-web-developer/',
+    whatsapp: 'https://wa.me/573026684002',
+    email: 'mailto:garry019@gmail.com'
 };
 
 const irA = (e, id) => {
@@ -51,6 +57,45 @@ export function Home() {
                 <div className="container py-5">
                     <div className="row py-lg-5">
                         <div className="col-lg-8">
+
+                            {/* Iconos de redes sociales */}
+                            <div className="d-flex align-items-center gap-3 mb-3">
+                                <a
+                                    href={perfil.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-dark fs-4 lh-1 transition-icon"
+                                    aria-label="GitHub"
+                                >
+                                    <SiGithub />
+                                </a>
+                                <a
+                                    href={perfil.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-dark fs-4 lh-1 transition-icon"
+                                    aria-label="LinkedIn"
+                                >
+                                    <FaLinkedinIn />
+                                </a>
+                                <a
+                                    href={perfil.whatsapp}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-dark fs-4 lh-1 transition-icon"
+                                    aria-label="WhatsApp"
+                                >
+                                    <FaWhatsapp />
+                                </a>
+                                <a
+                                    href={perfil.email}
+                                    className="text-dark fs-4 lh-1 transition-icon"
+                                    aria-label="Email"
+                                >
+                                    <FaEnvelope />
+                                </a>
+                            </div>
+
                             <p className="text-secondary fs-5 mb-2">{perfil.cargo}</p>
                             <h1
                                 className="fw-bold mb-4"
