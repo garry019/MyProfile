@@ -2,13 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/styles.css';
 import { useState, useEffect } from 'react';
 import { SiGithub } from 'react-icons/si';
-import { FaLinkedinIn, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp, FaEnvelope, FaFilePdf, FaDownload } from 'react-icons/fa';
 import { Navbar } from './Navbar';
 import { Tecnologias } from './Tecnologias';
 import { Workflow } from './Workflow';
 import { Portafolio } from './Portafolio';
 import { Contacto } from './Contacto';
 import ProfileImg from '../assets/img/foto_linkedin.jpg';
+import CVPdf from '../assets/files/cv-gabriel-calderon.pdf';
 
 function useContador(fin, duracion = 1500) {
     const [valor, setValor] = useState(0);
@@ -38,7 +39,8 @@ const perfil = {
     github: 'https://github.com/garry019',
     linkedin: 'https://www.linkedin.com/in/gary-full-stack-web-developer/',
     whatsapp: 'https://wa.me/573026684002',
-    email: 'mailto:garry019@gmail.com'
+    email: 'mailto:garry019@gmail.com',
+    cv: CVPdf
 };
 
 const irA = (e, id) => {
@@ -58,7 +60,7 @@ export function Home() {
                 <div className="container py-5">
                     <div className="row py-lg-5">
                         <div className="col-lg-3 d-flex align-items-center mt-5 mt-lg-0">
-                            <img src={ProfileImg} class="mx-auto d-block img-fluid rounded-circle" alt="..."/>
+                            <img src={ProfileImg} className="mx-auto d-block img-fluid rounded-circle" alt="..."/>
                         </div>
                         <div className="col-lg-7">
 
@@ -97,6 +99,17 @@ export function Home() {
                                     aria-label="Email"
                                 >
                                     <FaEnvelope />
+                                </a>
+                                <a
+                                    href={perfil.cv}
+                                    download="CV_Gabriel_Calderon.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-dark fs-4 lh-1 transition-icon"
+                                    aria-label="Descargar CV"
+                                    title="Descargar Curriculum Vitae"
+                                >
+                                    <FaDownload />
                                 </a>
                             </div>
 

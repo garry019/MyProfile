@@ -14,6 +14,7 @@ import {
     SiBlender,
     SiUnrealengine,
     SiUnity,
+    SiPostgresql
 } from 'react-icons/si';
 
 import {
@@ -49,8 +50,10 @@ const tecnologias = [
     {
         titulo: 'Bases de datos',
         items: [
+            { nombre: 'PostreSQL', icono: SiPostgresql, color: '#31638c' },
             { nombre: 'SQL', icono: FiDatabase, color: '#4479A1' },
             { nombre: 'NoSQL', icono: FiDatabase, color: '#47A248' },
+            { nombre: 'ORMs', icono: FiDatabase, color: '#4479A1' }, 
         ],
     },
     {
