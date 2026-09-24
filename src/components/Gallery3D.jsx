@@ -6,9 +6,9 @@ import img2 from '../assets/img/martina-vimat.jpg';
 
 const proyectos = [
     { titulo: 'EvaKey', imagen: img1, url: 'https://evakey.co/' },
-    { titulo: 'Martina - Proyectos de Energía Solar', imagen: img2, url: '#' },
-    { titulo: 'CRM Full Stack Development', imagen: 'https://garry019.github.io/profile/static/media/crm-developer.9a749d061fc3f68d3c93.jpg', url: '#' },
-    { titulo: 'Young Accesorios', imagen: 'https://garry019.github.io/profile/static/media/young-accesorios.535e781fa8eb632ee08d.jpg', url: '#' },
+    //{ titulo: 'Martina - Proyectos de Energía Solar', imagen: img2, url: '#' },
+    //{ titulo: 'CRM Full Stack Development', imagen: 'https://garry019.github.io/profile/static/media/crm-developer.9a749d061fc3f68d3c93.jpg', url: '#' },
+    //{ titulo: 'Young Accesorios', imagen: 'https://garry019.github.io/profile/static/media/young-accesorios.535e781fa8eb632ee08d.jpg', url: '#' },
     { titulo: 'EcoPower', imagen: 'https://garry019.github.io/profile/static/media/eco-power.f8bec0a6ecd40a14ba6e.jpg', url: '#' },
     { titulo: 'Femsa VR', imagen: 'https://garry019.github.io/profile/static/media/mundo-femsa.3fb37419545f00a81e02.jpg', url: '#' },
     { titulo: 'Pacman 3D', imagen: 'https://garry019.github.io/profile/static/media/3D-pacman.bc4c11691bfa868b12ed.jpg', url: '#' },

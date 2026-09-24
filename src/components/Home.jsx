@@ -8,6 +8,7 @@ import { Tecnologias } from './Tecnologias';
 import { Workflow } from './Workflow';
 import { Portafolio } from './Portafolio';
 import { Contacto } from './Contacto';
+import ProfileImg from '../assets/img/foto_linkedin.jpg';
 
 function useContador(fin, duracion = 1500) {
     const [valor, setValor] = useState(0);
@@ -56,7 +57,10 @@ export function Home() {
             <header id="inicio" className="hero border-bottom d-flex align-items-center bg-light">
                 <div className="container py-5">
                     <div className="row py-lg-5">
-                        <div className="col-lg-8">
+                        <div className="col-lg-3 d-flex align-items-center mt-5 mt-lg-0">
+                            <img src={ProfileImg} class="mx-auto d-block img-fluid rounded-circle" alt="..."/>
+                        </div>
+                        <div className="col-lg-7">
 
                             {/* Iconos de redes sociales */}
                             <div className="d-flex align-items-center gap-3 mb-3">
@@ -110,7 +114,7 @@ export function Home() {
                                 <br className="d-none d-md-block" />
                                 Tendencias más recientes de la industria y soluciones de vanguardia.
                             </p>
-                            <div className="d-grid d-sm-flex gap-2">
+                            <div className="d-grid d-flex gap-2">
                                 <a href="#tecnologias" className="btn btn-dark px-4" onClick={(e) => irA(e, 'tecnologias')}>
                                     Tecnologías
                                 </a>
@@ -119,8 +123,7 @@ export function Home() {
                                 </a>
                             </div>
                         </div>
-
-                        <div className="col-lg-4 d-flex align-items-center mt-5 mt-lg-0">
+                        <div className="col-lg-2 d-flex align-items-center mt-5 mt-lg-0">
                             <div className="border-start border-3 border-dark ps-4">
                                 <div className="display-2 fw-bold lh-1">+{anios}</div>
                                 <div className="text-secondary">Años de experiencia</div>
