@@ -1,3 +1,22 @@
+/* Secciones: altura natural en móvil, pantalla completa en escritorio */
+.seccion {
+    min-height: auto;
+    scroll-margin-top: 70px; /* ajusta a la altura de tu navbar */
+}
+
+@media (min-width: 992px) {
+    .seccion {
+        min-height: 100vh;
+        min-height: 100svh;
+    }
+}
+
+/* El hero sí ocupa la pantalla completa en todos los tamaños */
+.hero {
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
 .timeline {
     padding-left: 0.25rem;
 }

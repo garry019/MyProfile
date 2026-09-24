@@ -6,7 +6,6 @@ import { Tecnologias } from './Tecnologias';
 import { Workflow } from './Workflow';
 import { Portafolio } from './Portafolio';
 import { Contacto } from './Contacto';
-import { div } from 'three/tsl';
 
 function useContador(fin, duracion = 1500) {
     const [valor, setValor] = useState(0);
@@ -48,27 +47,37 @@ export function Home() {
             <Navbar />
 
             {/* Hero */}
-            <header id="inicio" className="border-bottom d-flex align-items-center bg-light" style={{ minHeight: "100vh" }}>
+            <header id="inicio" className="hero border-bottom d-flex align-items-center bg-light">
                 <div className="container py-5">
                     <div className="row py-lg-5">
                         <div className="col-lg-8">
                             <p className="text-secondary fs-5 mb-2">{perfil.cargo}</p>
-                            <h1 className="display-3 fw-bold mb-4">{perfil.nombre}</h1>
-                            <p className="lead text-secondary mb-4">Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>. <br /> Tecnologías <strong>front-end</strong> y <strong>back-end</strong>. <br />Tendencias más recientes de la industria y soluciones de vanguardia.</p>
-                            <div className="d-flex flex-wrap gap-2">
-                                <a className="btn btn-dark px-4" onClick={(e) => irA(e, "tecnologias")}>
+                            <h1
+                                className="fw-bold mb-4"
+                                style={{ fontSize: 'clamp(2.25rem, 9vw, 4.5rem)', lineHeight: 1.1 }}
+                            >
+                                {perfil.nombre}
+                            </h1>
+                            <p className="lead text-secondary mb-4">
+                                Dedicado al <strong>desarrollo web</strong>, sistemas de información y desarrollo de <strong>videojuegos</strong>.{' '}
+                                <br className="d-none d-md-block" />
+                                Tecnologías <strong>front-end</strong> y <strong>back-end</strong>.{' '}
+                                <br className="d-none d-md-block" />
+                                Tendencias más recientes de la industria y soluciones de vanguardia.
+                            </p>
+                            <div className="d-grid d-sm-flex gap-2">
+                                <a href="#tecnologias" className="btn btn-dark px-4" onClick={(e) => irA(e, 'tecnologias')}>
                                     Tecnologías
                                 </a>
-                                <a href="#contacto" className="btn btn-outline-dark px-4">
+                                <a href="#contacto" className="btn btn-outline-dark px-4" onClick={(e) => irA(e, 'contacto')}>
                                     Contacto
                                 </a>
                             </div>
                         </div>
+
                         <div className="col-lg-4 d-flex align-items-center mt-5 mt-lg-0">
                             <div className="border-start border-3 border-dark ps-4">
-                                <div className="display-2 fw-bold lh-1">
-                                    +{anios}<span className="text-secondary"></span>
-                                </div>
+                                <div className="display-2 fw-bold lh-1">+{anios}</div>
                                 <div className="text-secondary">Años de experiencia</div>
                             </div>
                         </div>
@@ -77,22 +86,22 @@ export function Home() {
             </header>
 
             {/* Tecnologías */}
-            <section id="tecnologias" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
+            <section id="tecnologias" className="seccion d-flex align-items-center py-5">
                 <Tecnologias />
             </section>
 
             {/* Workflow */}
-            <section id="workflow" className="d-flex align-items-center py-5 bg-light border-top border-bottom" style={{ minHeight: "100vh" }}>
+            <section id="workflow" className="seccion d-flex align-items-center py-5 bg-light border-top border-bottom">
                 <Workflow />
             </section>
 
             {/* Portafolio */}
-            <section id="portafolio" className="d-flex align-items-center py-5" style={{ minHeight: "100vh" }}>
+            <section id="portafolio" className="seccion d-flex align-items-center py-5">
                 <Portafolio />
             </section>
 
             {/* Contacto */}
-            <section id="contacto" className="d-flex align-items-center bg-light py-5" style={{ minHeight: "100vh" }}>
+            <section id="contacto" className="seccion d-flex align-items-center bg-light py-5">
                 <Contacto />
             </section>
         </div>
